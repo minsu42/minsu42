@@ -104,7 +104,7 @@ Spring Boot 3.3.5, MyBatis, MySQL, Redis, Spring AI, Qdrant
 
 > 라즈베리파이와 Coral Edge TPU를 활용한 온디바이스 실시간 유해 조수 탐지·퇴치 시스템
 
-이 레포는 임베디드 프로그래밍 수업 팀 프로젝트를 진행한 팀원(KimGeonWoo-p)의 저장소이며, 본인은 팀원으로 참여해 아래 항목을 담당했습니다. 담당 커밋은 [여기](https://github.com/KimGeonWoo-p/EAI/commits?author=minsu42)에서 확인할 수 있습니다.
+이 레포는 팀 프로젝트를 진행한 팀원(KimGeonWoo-p)의 저장소이며, 본인은 팀원으로 참여해 아래 항목을 담당했습니다. 담당 커밋은 [여기](https://github.com/KimGeonWoo-p/EAI/commits?author=minsu42)에서 확인할 수 있습니다.
 
 **Tech**
 Python, YOLOv5, YOLOv11, TensorFlow Lite, Edge TPU, OpenCV, C++, Raspberry Pi
