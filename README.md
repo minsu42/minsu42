@@ -85,16 +85,7 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=minsu42&show_icons=true&theme=default&hide_border=true" alt="minsu42's GitHub stats" />
-</p>
-
----
-
 ### 📫 Contact
 
-- Email: (이메일 입력)
-- Blog / Notion 포트폴리오: (링크 입력)
-- LinkedIn: (선택)
+- Email: kangms2023@naver.com
+- Velog: https://velog.io/@kangms2023
