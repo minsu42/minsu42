@@ -1,9 +1,4 @@
 <h1 align="center">Hi 👋, I'm Minsu Kang</h1>
-<h3 align="center">Backend Developer focused on Spring Boot & AI-integrated services</h3>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Java+%2F+Spring+Boot+Backend+Developer;RAG+%26+AI+Pipeline+Integration;SSAFY+15%EA%B8%B0+Backend+Track" alt="Typing SVG" />
-</p>
 
 ---
 
