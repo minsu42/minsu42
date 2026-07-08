@@ -100,7 +100,7 @@ Spring Boot 3.3.5, MyBatis, MySQL, Redis, Spring AI, Qdrant
 
 ---
 
-### [유해 조수 탐지 프로젝트 / EAI](https://github.com/KimGeonWoo-p/EAI)
+### [유해 조수 탐지 프로젝트 / EAI](https://github.com/minsu42/EAI)
 
 > 라즈베리파이와 Coral Edge TPU를 활용한 온디바이스 실시간 유해 조수 탐지·퇴치 시스템
 
