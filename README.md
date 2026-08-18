@@ -66,6 +66,40 @@
 
 ## Featured Projects
 
+### [PinGo](https://github.com/minsu42/pingo)
+
+> 외국인 관광객을 위한 지하철역 실내 내비게이션 웹앱 — 카메라 기반 실내 위치 인식(VPS), 층별 경로 안내, WebRTC 상담을 결합한 서비스
+
+**Tech** Java 17, Spring Boot 4.1, Spring Data JPA, Flyway, MySQL 8.4, FastAPI, HLOC/COLMAP, ALIKED, NetVLAD, React 19, TypeScript, WebRTC, Docker, Jenkins
+
+**Role** 6인 팀 프로젝트에서 카메라 기반 위치추정(VPS) 서버 구현, 위치·경로·외부 지도 연동 백엔드 개발, 위치 인식과 상담 자막 관련 프론트엔드 기능을 담당했습니다.
+
+**Key Contributions**
+
+- ALIKED 지역 특징과 NetVLAD 전역 검색을 결합한 HLOC/COLMAP 기반 6DoF 위치추정 엔진 구현
+- B2·B3 층별 서빙 맵을 런타임 로딩하고 다중 맵 중 최적 결과를 선택하는 위치추정 서버 구성
+- 위치추정 결과에 인라이어 수, 재투영 오차 등 기하 품질 지표를 포함해 약한 후보까지 응답하도록 계약 설계
+- 다중 프레임 가중 투표(`weightedLocalizationVote`)로 단일 촬영의 오인식을 보정하고, 첫 성공 응답 시 즉시 화면 전환하도록 개선
+- AI 응답을 층별 캐노니컬 좌표로 변환하고 최근접 경로 노드를 반환하는 `IndoorPositionResolver` 구현
+- 역별 AI 맵 세트 선택 로직을 백엔드로 이동해 클라이언트의 맵 버전 선택 의존을 제거
+- 카카오 Local API 기반 역 주변 장소 검색과, 외부 API 장애 시 로컬 검색 결과로 대체하는 fallback 처리 구현
+- 직선거리 기반 최근접 출구 조회 구현 및 N+1 쿼리 개선, 역삼역 출구 위경도 데이터를 Flyway 마이그레이션으로 시드
+- 카카오 도보 경로 거리·소요시간 조회 API를 추가하고, 조회 실패를 오류가 아닌 정상 응답으로 처리해 안내 흐름 유지
+- 사용자 발화 전사를 브라우저 인식에서 GMS Whisper 서버 전사로 전환하고, 소음 환경 발화 유실과 반복 전사 필터 문제 해결
+- 번역 음성이 마이크로 되먹임되어 사용자 발화가 상담원 발화로 기록되던 문제를 에코 가드로 해결하고 상담원 자막 한영 병기 구현
+- 노트북 GPU(CUDA) 및 EC2 CPU 실행 환경을 Docker Compose로 분리 구성하고 실행 가이드 문서화
+- 위치추정 엔진, 앵커링, 외부 API 연동, 상담 전사 전반에 pytest·JUnit·Vitest 테스트 코드 동반 작성
+
+**Technical Focus**
+
+- 카메라 기반 6DoF 실내 위치추정 파이프라인
+- AI 추론 결과와 서비스 좌표계 연동
+- 외부 API 장애를 고려한 대체 흐름 설계
+- 실시간 음성 전사와 다국어 자막 처리
+- 테스트 코드 기반 기능 구현
+
+---
+
 ### [냠냠코치 / PlayEat](https://github.com/minsu42/PlayEat)
 
 > 식단 기록을 AI 분석, 캐릭터 성장, 길드 보스전, 상점 보상으로 연결한 게임형 건강 관리 서비스
@@ -158,44 +192,6 @@ FastAPI, SQLAlchemy 2.0, PostgreSQL, React Native, Expo, TypeScript, Zustand, Op
 - AI 기반 자동 평가
 - 게임형 점수/랭킹 시스템
 - 백엔드·프론트엔드 통합 구현
-
----
-
-## Problem Solving Highlights
-
-### Transactional Event Handling
-
-PlayEat에서는 식단 기록이 성공적으로 저장된 이후에만 캐릭터 경험치와 상태 변화가 반영되어야 했습니다.
-이를 위해 `@TransactionalEventListener(phase = AFTER_COMMIT)`를 사용해 트랜잭션 커밋 이후 성장 이벤트가 실행되도록 설계했습니다.
-
-이 구조를 통해 식단 저장에 실패했는데도 캐릭터 상태가 변경되는 데이터 불일치 가능성을 줄였습니다.
-
----
-
-### RAG-based AI Report
-
-PlayEat의 AI 리포트는 단순한 일반 답변이 아니라, 식품영양성분 데이터를 기반으로 생성되도록 구성했습니다.
-Spring AI와 Qdrant를 활용해 관련 영양 정보를 검색하고, 검색 결과를 바탕으로 일간/주간 식단 코칭 리포트를 생성했습니다.
-
-이 과정에서 사용자 식단 기록과 외부 영양성분 데이터를 연결해 개인화된 피드백을 제공할 수 있도록 했습니다.
-
----
-
-### On-device Vision Inference
-
-EAI 프로젝트에서는 서버 의존도를 낮추기 위해 라즈베리파이와 Coral Edge TPU 기반 온디바이스 추론 구조를 구성했습니다.
-학습된 YOLO 모델을 양자화하고 Edge TPU에서 실행 가능한 형태로 변환한 뒤, OpenCV 카메라 입력과 C++ 추론 로직을 연결했습니다.
-
-이를 통해 실시간 카메라 입력에서 유해 조수를 탐지하고, GPIO 부저 제어까지 이어지는 흐름을 구현했습니다.
-
----
-
-## Currently Focusing On
-
-- Spring Boot 기반 백엔드 설계 역량 강화
-- 인증/인가, 트랜잭션, 데이터 모델링 학습
-- AI 기능을 실제 서비스 흐름에 안정적으로 연결하는 구조 설계
-- 테스트 코드와 배포 자동화를 통한 서비스 신뢰성 개선
 
 ---
 
