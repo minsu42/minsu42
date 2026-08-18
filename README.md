@@ -71,9 +71,9 @@
 > 외국인 관광객을 위한 지하철역 실내 내비게이션 웹앱 — 카메라 기반 실내 위치 인식(VPS), 층별 경로 안내, WebRTC 상담을 결합한 서비스
 
 <p align="center">
-  <img src="./images/pingo/route-options.png" width="230" alt="PinGo 경로 선택 화면"/>
-  <img src="./images/pingo/ar-navigation.png" width="230" alt="PinGo AR 실내 길 안내 화면"/>
-  <img src="./images/pingo/arrival.png" width="230" alt="PinGo 목적지 도착 화면"/>
+  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/05-route-options.png" width="230" alt="PinGo 경로 선택 화면"/>
+  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/07-ar-navigation.png" width="230" alt="PinGo AR 실내 길 안내 화면"/>
+  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/10-arrival.png" width="230" alt="PinGo 목적지 도착 화면"/>
 </p>
 
 **Tech** Java 17, Spring Boot 4.1, Spring Data JPA, Flyway, MySQL 8.4, FastAPI, HLOC/COLMAP, ALIKED, NetVLAD, React 19, TypeScript, WebRTC, Docker, Jenkins
