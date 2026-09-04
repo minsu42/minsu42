@@ -17,7 +17,6 @@
   <img src="https://img.shields.io/badge/MyBatis-DB2A2A?style=flat-square"/>
   <img src="https://img.shields.io/badge/JPA-59666C?style=flat-square"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
@@ -29,19 +28,9 @@
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
   <img src="https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white"/>
   <img src="https://img.shields.io/badge/Spring%20AI-6DB33F?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Qdrant-DC244C?style=flat-square"/>
   <img src="https://img.shields.io/badge/RAG-333333?style=flat-square"/>
   <img src="https://img.shields.io/badge/YOLO-111F68?style=flat-square"/>
   <img src="https://img.shields.io/badge/TensorFlow%20Lite-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-</p>
-
-**Frontend / Cross-stack**
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-  <img src="https://img.shields.io/badge/React%20Native-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Zustand-433E38?style=flat-square"/>
 </p>
 
 **Infra / Tools**
