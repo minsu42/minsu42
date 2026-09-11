@@ -189,9 +189,3 @@ FastAPI, SQLAlchemy 2.0, PostgreSQL, React Native, Expo, TypeScript, Zustand, Op
 - 백엔드·프론트엔드 통합 구현
 
 ---
-
-## Contact
-
-- Email: kangms2023@naver.com
-- GitHub: https://github.com/minsu42
-- Velog: https://velog.io/@kangms2023
