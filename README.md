@@ -26,6 +26,12 @@ AI 기능을 단순히 붙이는 것을 넘어
 **개인화 트렌드 발견을 위한 데이터 처리 파이프라인**  
 `Python` · `TF-IDF` · `KeyBERT` · `LLM`
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/minsu42/minsu42/main/images/trendin-explore.png" width="270" alt="TrendIn trend explore"/>
+  <img src="https://raw.githubusercontent.com/minsu42/minsu42/main/images/trendin-detail.png" width="270" alt="TrendIn trend detail"/>
+  <img src="https://raw.githubusercontent.com/minsu42/minsu42/main/images/trendin-country.png" width="270" alt="TrendIn country trends"/>
+</p>
+
 - 크롤링 → 전처리 → 키워드 추출 → 통합 → 지표 산출까지 데이터 파이프라인 전 구간 구현
 - 규칙 기반 한국어 처리에서 조사·활용형이 섞이는 문제를 발견하고 형태소 분석 방식으로 전환
 - 약어·전개형처럼 근거가 명확한 경우만 자동 병합하고, 애매한 유사도 판단은 검수 대상으로 분리
@@ -38,7 +44,9 @@ AI 기능을 단순히 붙이는 것을 넘어
 `Spring Boot` · `FastAPI` · `COLMAP` · `HLOC`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/07-ar-navigation.png" width="260" alt="PinGo AR navigation"/>
+  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/04-position-detected.png" width="200" alt="PinGo position detected"/>
+  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/07-ar-navigation.png" width="200" alt="PinGo AR navigation"/>
+  <img src="https://raw.githubusercontent.com/minsu42/pingo/master/docs/screenshots/user-flow/08-floor-transition.png" width="200" alt="PinGo floor transition"/>
 </p>
 
 - 카메라 이미지를 받아 실내 위치를 추정하는 HLOC/COLMAP 기반 VPS 서버와 서비스 연동 흐름 구현
@@ -55,7 +63,9 @@ AI 기능을 단순히 붙이는 것을 넘어
 `Spring Boot` · `Spring AI` · `Qdrant` · `Redis`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/minsu42/PlayEat/master/images/mainpage.png" width="380" alt="PlayEat main page"/>
+  <img src="https://raw.githubusercontent.com/minsu42/PlayEat/master/images/mainpage.png" width="270" alt="PlayEat main page"/>
+  <img src="https://raw.githubusercontent.com/minsu42/PlayEat/master/images/anlayze.png" width="270" alt="PlayEat diet report"/>
+  <img src="https://raw.githubusercontent.com/minsu42/PlayEat/master/images/architecture.png" width="270" alt="PlayEat architecture"/>
 </p>
 
 - 식단 기록·영양 정보·AI 코칭을 연결하는 백엔드 API와 서비스 로직 구현
